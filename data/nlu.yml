@@ -1,0 +1,45 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi there
+    - hey
+    - what's up
+
+- intent: goodbye
+  examples: |
+    - bye
+    - see you later
+    - goodbye
+
+- intent: ask_skills
+  examples: |
+    - What are your skills?
+    - Tell me about your technical skills
+    - What tools do you know?
+
+- intent: ask_experience
+  examples: |
+    - What experience do you have?
+    - Where have you worked?
+    - Tell me about your internships
+
+- intent: ask_projects
+  examples: |
+    - What projects have you done?
+    - Describe your recent project
+    - Any hackathon projects?
+
+- intent: ask_education
+  examples: |
+    - Where do you study?
+    - Tell me about your education
+    - What degree are you pursuing?
+
+- intent: ask_interests
+  examples: |
+    - What are your interests?
+    - What do you enjoy doing?
+    - What are your hobbies?
