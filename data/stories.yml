@@ -1,0 +1,26 @@
+version: "3.1"
+stories:
+- story: ask about resume
+  steps:
+  - intent: ask_education
+  - action: utter_ask_education
+
+- story: ask work experience
+  steps:
+  - intent: ask_experience
+  - action: utter_ask_experience
+
+- story: ask skills
+  steps:
+  - intent: ask_skills
+  - action: utter_ask_skills
+
+- story: ask projects
+  steps:
+  - intent: ask_projects
+  - action: utter_ask_projects
+
+- story: ask interests
+  steps:
+  - intent: ask_interests
+  - action: utter_ask_interests

@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+- rule: Say goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Greet the user
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- rule: Answer skills
+  steps:
+    - intent: ask_skills
+    - action: utter_ask_skills
+
+- rule: Answer experience
+  steps:
+    - intent: ask_experience
+    - action: utter_ask_experience
+
+- rule: Answer projects
+  steps:
+    - intent: ask_projects
+    - action: utter_ask_projects
+
+- rule: Answer education
+  steps:
+    - intent: ask_education
+    - action: utter_ask_education
+
+- rule: Answer interests
+  steps:
+    - intent: ask_interests
+    - action: utter_ask_interests
+
+- rule: Handle fallback with LLM
+  steps:
+    - intent: nlu_fallback
+    - action: action_llm_fallback
