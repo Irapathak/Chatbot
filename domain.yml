@@ -1,0 +1,36 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_skills
+  - ask_experience
+  - ask_projects
+  - ask_education
+  - ask_interests
+  - fallback
+
+responses:
+  utter_greet:
+    - text: "Hello! I’m a bot trained on Ira Pathak’s resume. How can I help you?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_ask_skills:
+    - text: "Ira is skilled in Python, ML, full-stack development (MERN), and using tools like Selenium, LangChain, and TensorFlow."
+
+  utter_ask_experience:
+    - text: "Ira has worked at AllzGo and interned at Bhaifi, contributing to backend development, JIRA analysis, and security tools."
+
+  utter_ask_projects:
+    - text: "Ira has worked on projects like EnGarde (fencing analytics), PrintsNCuts (e-commerce), and a finance chatbot using FinBERT."
+
+  utter_ask_education:
+    - text: "Ira is a Computer Science student at Georgia Tech with a FinTech minor."
+
+  utter_ask_interests:
+    - text: "Ira enjoys AI, FinTech, iOS dev, camping, and building tools with real-world impact."
+
+actions:
+  - action_llm_fallback
